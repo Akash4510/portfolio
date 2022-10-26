@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 6px 0;
   z-index: 200;
 
   @include gradientBackground();
@@ -131,9 +130,5 @@
     &.cross {
       font-size: 1.6rem;
     }
-  }
-
-  @media screen and (max-width: $mobile-breakpoint) {
-    padding: 0 10px;
   }
 }
