@@ -5,6 +5,7 @@
 @import "components";
 @import "navbar";
 @import "hero";
+@import "about";
 
 :root {
   --clr-text-900: #ffffff;
@@ -41,5 +42,7 @@
 
   &__title {
     font-size: 2.2rem;
+    margin-bottom: 30px;
+    word-spacing: 0.4rem;
   }
 }
