@@ -1,0 +1,45 @@
+@import "reset";
+@import "variables";
+@import "config";
+@import "animations";
+@import "components";
+@import "navbar";
+@import "hero";
+
+:root {
+  --clr-text-900: #ffffff;
+  --clr-text-700: #dbdbdb;
+  --clr-text-500: #c1c1c1;
+  --clr-text-400: #acacac;
+  --clr-text-300: #898989;
+}
+
+.app {
+  @include flex($direction: column);
+  min-height: 100vh;
+
+  @include gradientBackground();
+  color: $white;
+
+  &-sections {
+    width: 100%;
+  }
+}
+
+.container {
+  @include defaultContainer();
+}
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+  @include flex();
+
+  &__container {
+    @include defaultContainer();
+  }
+
+  &__title {
+    font-size: 2.2rem;
+  }
+}

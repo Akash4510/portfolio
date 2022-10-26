@@ -1,0 +1,139 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 6px 0;
+  z-index: 200;
+
+  @include gradientBackground();
+  opacity: 0.85;
+
+  &__container {
+    @include flex($justify: space-between);
+  }
+
+  &__logo {
+    @include flex();
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 300;
+
+    a {
+      color: $white;
+      @include gradientText();
+    }
+  }
+
+  &__actions {
+    @include flex($gap: 1rem);
+
+    &--mobile-only {
+      .navbar__links-container {
+        @include flex($align: center, $direction: column, $gap: 3.5rem);
+        text-align: center;
+        @include gradientBackground();
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 0 0 0 30px;
+        transition: all 0.3s ease-in-out;
+        z-index: 100;
+      }
+
+      .navbar__toggle-btn {
+        z-index: 320;
+      }
+
+      .navbar__links {
+        flex-direction: column;
+        font-size: 1.4rem;
+      }
+
+      .navbar__link {
+        width: 100%;
+        padding: 0.3rem 0;
+
+        a {
+          color: $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+      }
+
+      .navbar__contact {
+        h3 {
+          margin-top: 10px;
+          font-size: 1.1rem;
+          font-weight: 300;
+        }
+        p {
+          font-size: 0.95rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  &__links {
+    @include flex($justify: space-between, $gap: 0.6rem);
+  }
+
+  &__link {
+    font-weight: 400;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+
+    a {
+      position: relative;
+      color: $white;
+      text-transform: capitalize;
+
+      &,
+      &::after,
+      &::before {
+        transition: all 0.3s ease;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: ".";
+        color: transparent;
+        background: $white;
+        height: 1px;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__toggle-btn {
+    position: relative;
+    @include flex();
+    background-color: transparent;
+    color: $white;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &.cross {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: 0 10px;
+  }
+}

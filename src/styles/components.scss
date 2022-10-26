@@ -1,0 +1,95 @@
+$clr-primary: #541ba7;
+
+.btn {
+  width: max-content;
+  cursor: pointer;
+
+  @include flex($gap: 0.8rem);
+  padding: 10px 16px;
+
+  color: var(--clr-text-500);
+  border: none;
+  border-radius: 10px;
+
+  @include gradientComponent();
+
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+
+  &-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 1px solid $white;
+  }
+
+  &:hover {
+    translate: 0 -5px;
+  }
+
+  &--outline {
+    background: transparent;
+    color: $clr-primary;
+    border: 2px solid $clr-primary;
+    transition-duration: 0.1s;
+
+    &:hover {
+      @include gradientComponent();
+      color: var(--clr-text-500);
+    }
+  }
+
+  &--link {
+    background: transparent;
+    color: $clr-primary;
+    border: none;
+    padding: 2px 5px;
+    text-transform: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.theme-toggle-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 400;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  background-color: var(--clr-bg);
+  color: var(--clr-text-500);
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.moon {
+      font-size: 1.4rem;
+    }
+  }
+}
