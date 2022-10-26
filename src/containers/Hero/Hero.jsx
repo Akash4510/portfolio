@@ -7,9 +7,9 @@ import heroImg from "../../assets/img/hero-img.png";
 
 const Hero = () => {
   const desc = [
-    "Full Stack Web Developer",
-    "Creative UI-UX Designer",
-    "Enthusiastic Programmer",
+    " Full Stack Web Developer",
+    " Creative UI-UX Designer",
+    "n Enthusiastic Programmer",
   ];
 
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
             I'm <span>Akash</span>
           </h1>
           <h2 className="hero__text-desc">
-            A{" "}
+            A
             <span>
               <Typewriter
                 words={desc}
