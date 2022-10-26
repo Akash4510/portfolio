@@ -9,7 +9,8 @@ const About = () => {
           <p>
             I am Akash Gupta, a Full Stack Web Developer and a Creative UI-UX
             Designer. I am currently pursuing my B.Tech in Electronics and
-            Instrumentation Engineering from Techno Main Saltlake, West Bengal.
+            Instrumentation Engineering from Techno Main Saltlake, West Bengal,
+            Kolkata.
           </p>
           <p>
             I started my programming journey in 2020 and ever since then I love
