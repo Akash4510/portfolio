@@ -39,7 +39,7 @@ const Hero = () => {
           <Button
             btnClassName="hero__btn"
             buttonStyle="btn--solid"
-            text="Contact Me"
+            text="Download Resume"
             iconPosition="right"
           />
         </div>
