@@ -5,7 +5,8 @@ $clr-primary: #541ba7;
   cursor: pointer;
 
   @include flex($gap: 0.8rem);
-  padding: 10px 16px;
+  padding: 0 16px;
+  height: 42px;
 
   color: var(--clr-text-600);
   border: none;
