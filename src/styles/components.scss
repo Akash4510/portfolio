@@ -27,10 +27,6 @@ $clr-primary: #541ba7;
     opacity: 0.6;
   }
 
-  &:focus {
-    outline: 1px solid $white;
-  }
-
   &:hover {
     translate: 0 -5px;
   }
