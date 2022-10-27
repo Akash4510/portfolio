@@ -16,10 +16,10 @@ const About = () => {
             grow together.
           </p>
           <p>
-            I am a quick & enthusiastic learner and a team player. I am always
-            ready to learn and work across technologies and domains. I love to
-            explore new technologies and leverage them to solve real-life
-            problems.
+            I am a quick & enthusiastic learner and loves to work as a team. I
+            am always ready to learn and work across technologies and domains. I
+            love to explore new technologies and leverage them to solve
+            real-life problems.
           </p>
           <p>
             Have an idea for a project? Let's talk about it. I am always open to
