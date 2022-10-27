@@ -18,5 +18,13 @@
   &__text {
     text-align: justify;
     @include flex($direction: column, $gap: 1rem);
+
+    span {
+      color: #a973fc;
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
   }
 }
