@@ -7,7 +7,7 @@ $clr-primary: #541ba7;
   @include flex($gap: 0.8rem);
   padding: 10px 16px;
 
-  color: var(--clr-text-500);
+  color: var(--clr-text-600);
   border: none;
   border-radius: 10px;
 
@@ -80,7 +80,6 @@ $clr-primary: #541ba7;
   cursor: pointer;
 
   font-size: 1.2rem;
-  background-color: var(--clr-bg);
   color: var(--clr-text-500);
 
   &__icon {
