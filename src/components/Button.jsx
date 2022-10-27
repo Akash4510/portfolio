@@ -31,7 +31,7 @@ const Button = ({
       disabled={disabled}
     >
       {icon && iconPos === "left" && <span className="btn-icon">{icon}</span>}
-      {text && <p className="btn-text">{text}</p>}
+      {text && <span className="btn-text">{text}</span>}
       {icon && iconPos === "right" && <span className="btn-icon">{icon}</span>}
     </button>
   );
