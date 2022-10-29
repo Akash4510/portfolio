@@ -1,0 +1,53 @@
+.skills {
+  &__cards-container {
+    @include grid($columns: repeat(1, 1fr), $gap: 1rem);
+    justify-content: space-between;
+    width: 100%;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.skill-card {
+  @include flex($justify: flex-start, $gap: 1rem);
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 15px 15px;
+  background-color: #161b226e;
+
+  &__img {
+    width: max-content;
+    @include flex();
+
+    img {
+      width: 45px;
+      max-width: none;
+    }
+  }
+
+  &__text {
+    @include flex($align: flex-start, $direction: column);
+  }
+
+  &__title {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: fit-content;
+  }
+
+  &__desc {
+    $lines: 3;
+    color: var(--clr-text-500);
+    line-height: 1.3;
+    opacity: 0.7;
+    font-size: 0.85rem;
+    @include clampedText($lines);
+  }
+}
