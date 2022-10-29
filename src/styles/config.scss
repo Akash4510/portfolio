@@ -18,6 +18,13 @@
   margin: auto;
 }
 
+@mixin clampedText($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @mixin gradientBackground($direction: right) {
   background-color: #21053b;
 
